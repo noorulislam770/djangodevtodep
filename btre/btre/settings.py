@@ -34,8 +34,10 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
     'realtors.apps.RealtorsConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
+    'anymail',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -144,3 +146,40 @@ MESSAGE_TAGS =  {
     messages.ERROR : 'danger',
     
 }
+
+
+# email config
+
+# sendgrid
+# EMAIL_BACKEND = 'anymail.backends.sendgrid.EmailBackend'
+# ANYMAIL = {
+#     'SENDGRID_API_KEY': '',  # Replace with your SendGrid API key
+# }
+
+# gmail which doesnot word
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'btrerealstatepk@gmail.com'
+# EMAIL_HOST_PASSWORD = ''
+# EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = False
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+
+# microsoft account
+# EMAIL_HOST = 'smtp.live.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'noorulislam770@live.com'
+# EMAIL_HOST_PASSWORD = ''
+
+
+# Retrying Google
+
+# DEFAULT_FROM_EMAIL = 'btrerealstatepk@gmail.com'
+# SERVER_EMAIL = 'btrerealstatepk@gmail.com'
+# EMAIL_USE_TLS = True
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'btrerealstatepk@gmail.com'
+# EMAIL_HOST_PASSWORD = ''
